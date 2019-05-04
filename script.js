@@ -1,4 +1,4 @@
-(function() {
+;(function() {
 	'use strict';
 
 	var requestAnimationFrame = window.requestAnimationFrame ||
@@ -16,8 +16,6 @@
 			document.body.offsetHeight, document.documentElement.offsetHeaight,
 			document.body.clientHeight, document.documentElement.clientHeight
 		);
-
-	containers = document.querySelectorAll('.wrap > .elem');
 
 	menu.onclick = function(e) {
 		if (e.target.tagName != 'SPAN') return;
@@ -59,9 +57,7 @@
 					now = new Date().getTime() - start,
 					result = Math.round(top * now / duration);
 
-			result = (result > direction * top) ? top :
-							 (result == 0) ? direction :
-							 result;
+			result = (result > direction * top) ? top : (result == 0) ? direction : result;
 
 			if (direction * top > 0 && (pageHeight - window.pageYOffset) > direction * document.documentElement.clientHeight) {
 				window.scrollBy(0, result);

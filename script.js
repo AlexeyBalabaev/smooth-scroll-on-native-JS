@@ -53,7 +53,7 @@
 			start    = new Date().getTime();
 
 		var fn = function () {
-			var top = el.getBoundingClientRect().top - 96,
+			var top = el.getBoundingClientRect().top - 95,
 					now = new Date().getTime() - start,
 					result = Math.round(top * now / duration);
 

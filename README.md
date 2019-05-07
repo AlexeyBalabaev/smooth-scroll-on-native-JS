@@ -5,6 +5,6 @@ Typical html. But using <span> instead of <a> for elements of the list.
 
 CSS.
 Nothing beatifful in the css part. :)
-Oh, we use litle flexbox.
+Oh, we use a little flexbox.
 
 JS.
